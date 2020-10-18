@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "./Sidebar";
+import Chat from "./ Chat";
 import "./App.css";
 
 function App() {
@@ -7,8 +8,9 @@ function App() {
         <div className="app">
             <h1>Hello</h1>
             <div className="app__body">
-				<Sidebar/>
-			</div>
+                <Sidebar />
+                <Chat />
+            </div>
         </div>
     );
 }
