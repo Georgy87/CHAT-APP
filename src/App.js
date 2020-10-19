@@ -3,12 +3,13 @@ import Sidebar from "./Sidebar";
 import Chat from "./ Chat";
 import Login from "./Login";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {useStateValue} from "./StateProvider";
 
 import "./App.css";
 
 function App() {
-    const [user, setUser] = useState(null);
-
+    const [{user}, dispatch] = useStateValue();
+    console.log(user);
     return (
         <div className="app">
             <div className="app__body">
